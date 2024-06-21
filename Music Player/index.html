@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Album Cover</title>
+<style>
+  .music-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 300px;
+    padding: 10px;
+    background-color: #c3eed0;
+    border-radius: 5px;
+  }
+  
+  .album-cover {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+  
+  .music-info {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .song-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .artist {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .pause-btn, .prev-btn, .next-btn {
+    height: 30px;
+    width: 30px;
+    margin: 0px 5px;
+    background-color: rgb(75, 71, 71);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .pause-btn:hover, .prev-btn:hover, .next-btn:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+  <div class="music-player">
+    <img src="wall.png" alt="Album Cover" class="album-cover">
+    <div class="music-info">
+      <h2 class="song-title">Song Title</h2>
+      <p class="artist">Artist Name</p>
+    </div>
+    <div class="controls">
+      <button class="pause-btn">||</button>
+      <button class="prev-btn">&lt;&lt;</button>
+      <button class="next-btn">&gt;&gt;</button>
+    </div>
+  </div>
+</body>
+</html>
